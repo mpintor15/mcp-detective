@@ -14,10 +14,10 @@ pytest mcp-detective -q
 mcp dev mcp-detective/server.py
 ```
 
-Conexión al agente (stdio, con rutas absolutas; ajusta las rutas a tu equipo):
+Conexión al agente (stdio, con rutas absolutas; ejecutar desde la raíz del repositorio):
 
 ```bash
-claude mcp add detective -- /RUTA/ABSOLUTA/.venv/bin/python /RUTA/ABSOLUTA/mcp-detective/server.py
+claude mcp add detective -- "$PWD/.venv/bin/python" "$PWD/mcp-detective/server.py"
 ```
 
 ## 1. Arquitectura
